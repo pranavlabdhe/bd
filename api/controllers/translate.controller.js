@@ -6,6 +6,7 @@ const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY});
 
 export const textToSpeechFun = async (req, res, next) => {
     try {
+        
         const { text } = req.body;
 
         // Generate speech using the ChatGPT API
