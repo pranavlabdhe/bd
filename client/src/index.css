@@ -74,3 +74,36 @@ margin-top: 16px;
   color: rgb(47, 167, 47);
   font-weight: bold;
 }
+.utilities_div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.summarize {
+  background-color: rgb(194, 194, 194)  ;
+  padding: 16px;
+  border-radius: 12px;
+  color: black;
+}
+
+.summaryContent {
+  margin: 16px;
+}
+
+.listen_audio {
+  margin-top: 16px;
+}
+
+@media screen and (max-width:600px) {
+    .utilities_div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .summarize {
+      margin-top: 10px;
+    }
+
+}

@@ -6,6 +6,7 @@ import authRoutes from './routes/auth.route.js';
 import postRoutes from './routes/post.route.js';
 import commentRoutes from './routes/comment.route.js';
 import translateRoute from './routes/translate.route.js'
+import summaryRoute from './routes/summary.route.js'
 import cookieParser from 'cookie-parser';
 import path from 'path';
 import cors from 'cors'
@@ -39,6 +40,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/post', postRoutes);
 app.use('/api/comment', commentRoutes);
 app.use('/api/textToSpeechfun',translateRoute);
+app.use('/api/summaryFun' ,summaryRoute)
 
 app.use(express.static(path.join(__dirname, '/client/dist')));
 

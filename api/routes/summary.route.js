@@ -1,10 +1,10 @@
 
 import express from 'express';
-import { textToSpeechFun } from '../controllers/translate.controller.js';
+import { summaryFun } from '../controllers/summary.controller.js';
 const router = express.Router();
 // // Enable CORS for all routes
 // router.use(cors());
 
-router.post('/textToSpeech', textToSpeechFun)
+router.post('/summary', summaryFun)
    
 export default router;
