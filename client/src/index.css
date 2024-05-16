@@ -84,6 +84,7 @@ margin-top: 16px;
   padding: 16px;
   border-radius: 12px;
   color: black;
+  display: none;
 }
 
 .summaryContent {

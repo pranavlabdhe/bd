@@ -68,7 +68,8 @@ export default function PostPage() {
           // Strip HTML tags from the post content
           const strippedContent = post.content.replace(/<[^>]+>/g, '');
           const res = await fetch(
-            "https://medium-blog-post.onrender.com/api/textToSpeechfun/textToSpeech",
+            // "https://medium-blog-post.onrender.com/api/textToSpeechfun/textToSpeech",
+            'http://localhost:3000/api/textToSpeechfun/textToSpeech',
             {
               method: "POST",
               headers: {
